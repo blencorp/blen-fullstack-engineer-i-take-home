@@ -4,6 +4,8 @@
 
 Build a **Task Tracker** application with a REST API and a dashboard UI. The project skeleton is provided: database schema, migrations, seed data, and a full test suite. Your job is to implement the API route handlers and build a polished dashboard.
 
+**Time expectation:** 1-2 days. Focus on clean, working code over polish.
+
 ## What's Provided
 
 | Layer | Details |
@@ -20,7 +22,7 @@ Build a **Task Tracker** application with a REST API and a dashboard UI. The pro
 
 | Method | Path | Description |
 | --- | --- | --- |
-| `GET` | `/api/projects` | List projects (optional `status` filter and `includeTasks` flag) |
+| `GET` | `/api/projects` | List projects with task counts (optional `status` filter) |
 | `POST` | `/api/projects` | Create a project (unique name required) |
 | `GET` | `/api/projects/:id` | Get project with task counts |
 | `PATCH` | `/api/projects/:id` | Update project fields |
@@ -130,5 +132,9 @@ bun run db:reset && bun run db:seed
 | **Code quality** | 25% | Clean TypeScript, proper error handling, no shortcuts, good separation of concerns. |
 | **UI/UX** | 20% | Functional dashboard, good use of shadcn/ui, responsive design, dark mode support. |
 | **Solution design** | 15% | Thoughtful, practical answers to the architectural questions. |
+
+## Questions?
+
+If anything is unclear, reach out. We'd rather you ask than guess.
 
 Good luck!
