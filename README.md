@@ -41,9 +41,16 @@ completed -> in_progress
 
 ### 2. Dashboard UI
 
-Build a single-page dashboard (or multi-page if you prefer) that allows users to:
+Use **Next.js App Router patterns** — file-system routing, Server Components for data fetching, Client Components for interactivity.
+
+Two page scaffolds are provided:
+- **`app/page.tsx`** — Projects list (the dashboard home)
+- **`app/projects/[id]/page.tsx`** — Project detail with task management
+
+Build a multi-page dashboard that allows users to:
 
 - View all projects with task count summaries
+- Navigate to `/projects/[id]` using `next/link` for the detail view
 - Create new projects
 - View a project's tasks in a filterable table
 - Create and edit tasks
