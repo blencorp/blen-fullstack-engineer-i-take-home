@@ -123,8 +123,10 @@ bun run db:reset && bun run db:seed
 3. Build the dashboard UI
 4. Answer the questions in `SOLUTION_DESIGN.md`
 5. Ensure all 35 tests pass, typecheck is clean, and lint passes
-6. Add your BLEN recruiting contact as a collaborator on your repo
-7. Share the repo link with your recruiting contact
+6. Add the following GitHub users as **collaborators** on your repo ([how to add collaborators](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-access-to-your-personal-repositories/inviting-collaborators-to-a-personal-repository)):
+   - `naodya` (Naod — Engineering)
+   - `juliosbelen` (Julius — Engineering)
+7. Send the repo link to your BLEN recruiting contact
 
 ## Evaluation Criteria
 
