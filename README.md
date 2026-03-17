@@ -101,7 +101,7 @@ The app runs at **http://localhost:3001**.
 
 ```bash
 # Run all tests (35 total)
-bun test
+bun run test
 
 # Run tests in watch mode
 bun run test:watch

@@ -11,6 +11,8 @@ const fontMono = Geist_Mono({
   variable: "--font-mono",
 })
 
+export const metadata = { title: "Task Tracker", description: "BLEN Full-Stack Take-Home" };
+
 export default function RootLayout({
   children,
 }: Readonly<{
