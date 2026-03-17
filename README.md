@@ -4,7 +4,7 @@
 
 Build a **Task Tracker** application with a REST API and a dashboard UI. The project skeleton is provided: database schema, migrations, seed data, and a full test suite. Your job is to implement the API route handlers and build a polished dashboard.
 
-**Time expectation:** 1-2 days. Focus on clean, working code over polish.
+**Time expectation:** Please submit within 24 hours. Focus on clean, working code over polish.
 
 ## What's Provided
 
