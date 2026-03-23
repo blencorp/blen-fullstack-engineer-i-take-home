@@ -125,7 +125,7 @@ bun run db:reset && bun run db:seed
 5. Ensure all 35 tests pass, typecheck is clean, and lint passes
 6. Add the following GitHub users as **collaborators** on your repo ([how to add collaborators](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-access-to-your-personal-repositories/inviting-collaborators-to-a-personal-repository)):
    - `naodya` (Naod — Engineering)
-   - `juliosbelen` (Julius — Engineering)
+   - `juliusoh` (Julius — Engineering)
 7. Send the repo link to your BLEN recruiting contact
 
 ## Evaluation Criteria
