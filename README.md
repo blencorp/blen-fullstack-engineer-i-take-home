@@ -1,5 +1,18 @@
 # BLEN Corp — Senior Software Developer I (Full Stack) Take-Home
 
+## Candidate Info
+
+> **Please fill this in before submitting.** This helps our reviewers identify your submission.
+
+| Field | Your answer |
+|-------|-------------|
+| **Name** | <!-- Your full name --> |
+| **Email** | <!-- Your email address --> |
+| **GitHub** | <!-- Your GitHub username --> |
+| **Date submitted** | <!-- e.g. 2026-03-24 --> |
+
+---
+
 ## Overview
 
 Build a **Task Tracker** application with a REST API and a dashboard UI. The project skeleton is provided: database schema, migrations, seed data, and a full test suite. Your job is to implement the API route handlers and build a polished dashboard.
@@ -119,7 +132,7 @@ bun run db:reset && bun run db:seed
 ## Submission
 
 1. Click **"Use this template"** on GitHub to create a **private** copy of this repo
-2. **Fill in the candidate info section below** (in your copy of this README)
+2. **Fill in the Candidate Info table at the top of this README**
 3. Implement all API routes (replace the `TODO` stubs)
 4. Build the dashboard UI
 5. Answer the questions in `SOLUTION_DESIGN.md`
@@ -128,15 +141,6 @@ bun run db:reset && bun run db:seed
    - `naodya` (Naod — Engineering)
    - `juliusoh` (Julius — Engineering)
 8. Send the repo link to your BLEN recruiting contact
-
-### Candidate Info
-
-> **Please fill this in before submitting.** This helps our reviewers identify your submission.
-
-- **Name:** <!-- Your full name -->
-- **Email:** <!-- Your email address -->
-- **GitHub:** <!-- Your GitHub username -->
-- **Date submitted:** <!-- e.g. 2026-03-24 -->
 
 ## Evaluation Criteria
 
