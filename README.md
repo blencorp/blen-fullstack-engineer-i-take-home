@@ -119,14 +119,24 @@ bun run db:reset && bun run db:seed
 ## Submission
 
 1. Click **"Use this template"** on GitHub to create a **private** copy of this repo
-2. Implement all API routes (replace the `TODO` stubs)
-3. Build the dashboard UI
-4. Answer the questions in `SOLUTION_DESIGN.md`
-5. Ensure all 35 tests pass, typecheck is clean, and lint passes
-6. Add the following GitHub users as **collaborators** on your repo ([how to add collaborators](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-access-to-your-personal-repositories/inviting-collaborators-to-a-personal-repository)):
+2. **Fill in the candidate info section below** (in your copy of this README)
+3. Implement all API routes (replace the `TODO` stubs)
+4. Build the dashboard UI
+5. Answer the questions in `SOLUTION_DESIGN.md`
+6. Ensure all 35 tests pass, typecheck is clean, and lint passes
+7. Add the following GitHub users as **collaborators** on your repo ([how to add collaborators](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-access-to-your-personal-repositories/inviting-collaborators-to-a-personal-repository)):
    - `naodya` (Naod — Engineering)
    - `juliusoh` (Julius — Engineering)
-7. Send the repo link to your BLEN recruiting contact
+8. Send the repo link to your BLEN recruiting contact
+
+### Candidate Info
+
+> **Please fill this in before submitting.** This helps our reviewers identify your submission.
+
+- **Name:** <!-- Your full name -->
+- **Email:** <!-- Your email address -->
+- **GitHub:** <!-- Your GitHub username -->
+- **Date submitted:** <!-- e.g. 2026-03-24 -->
 
 ## Evaluation Criteria
 
