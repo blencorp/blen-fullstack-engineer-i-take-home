@@ -282,6 +282,21 @@ describe("PATCH /api/tasks/:id — status transitions", () => {
     expect((await parseResponse<Task>(res)).status).toBe("in_progress");
   });
 
+  it("should allow same-status PATCH as a no-op (idempotent)", async () => {
+    const p = await seedProject();
+    const t = await seedTask(p.id, { status: "open" });
+
+    const req = createRequest(`/api/tasks/${t.id}`, {
+      method: "PATCH",
+      body: { status: "open" },
+    });
+    const res = await PATCH_BY_ID(req, {
+      params: Promise.resolve({ id: t.id }),
+    });
+    expect(res.status).toBe(200);
+    expect((await parseResponse<Task>(res)).status).toBe("open");
+  });
+
   it("should reject open → completed (invalid transition)", async () => {
     const p = await seedProject();
     const t = await seedTask(p.id, { status: "open" });

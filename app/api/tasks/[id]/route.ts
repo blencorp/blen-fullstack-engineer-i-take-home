@@ -33,7 +33,9 @@ export async function GET(_request: NextRequest, _context: RouteContext) {
  *   - in_review → completed | in_progress
  *   - completed → in_progress
  *
- * Use VALID_STATUS_TRANSITIONS from "@/lib/types" to validate.
+ * Use VALID_STATUS_TRANSITIONS from "@/lib/types" to validate. PATCH with the
+ * SAME status as current is idempotent — return 200 without consulting the
+ * map (the map only encodes state changes, not self-loops).
  *
  * Non-status fields (title, description, priority, assignee, dueDate, labels)
  * can be updated freely.

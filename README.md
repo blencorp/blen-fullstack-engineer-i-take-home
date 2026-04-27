@@ -1,4 +1,4 @@
-# BLEN Corp — Senior Software Developer I (Full Stack) Take-Home
+# BLEN — Senior Software Developer I (Full Stack) Take-Home
 
 ## Candidate Info
 
@@ -25,7 +25,7 @@ Build a **Task Tracker** application with a REST API and a dashboard UI. The pro
 | --- | --- |
 | **Database** | PostgreSQL 16 via Docker, Drizzle ORM schema with `projects` and `tasks` tables |
 | **Migrations** | Auto-generated SQL migration and helper scripts (`db:migrate`, `db:seed`, `db:reset`) |
-| **Test suite** | 35 Jest tests covering all API endpoints, status transitions, and edge cases |
+| **Test suite** | 36 Jest tests covering all API endpoints, status transitions, and edge cases |
 | **API scaffolds** | Route files with detailed JSDoc comments and `501 Not Implemented` stubs |
 | **UI foundation** | Next.js 16 with shadcn/ui, dark mode, Tailwind CSS, and lucide-react icons |
 
@@ -39,7 +39,7 @@ Build a **Task Tracker** application with a REST API and a dashboard UI. The pro
 | `POST` | `/api/projects` | Create a project (unique name required) |
 | `GET` | `/api/projects/:id` | Get project with task counts |
 | `PATCH` | `/api/projects/:id` | Update project fields |
-| `DELETE` | `/api/projects/:id` | Delete project (blocked if it has active tasks) |
+| `DELETE` | `/api/projects/:id` | Delete project (blocked if any task is not yet `completed`) |
 | `GET` | `/api/tasks` | Paginated task list with filters (status, priority, assignee, projectId) |
 | `POST` | `/api/tasks` | Create a task (title and valid projectId required) |
 | `GET` | `/api/tasks/:id` | Get task with parent project |
@@ -113,7 +113,7 @@ The app runs at **http://localhost:3001**.
 ### Running Tests
 
 ```bash
-# Run all tests (35 total)
+# Run all tests (36 total)
 bun run test
 
 # Run tests in watch mode
@@ -136,7 +136,7 @@ bun run db:reset && bun run db:seed
 3. Implement all API routes (replace the `TODO` stubs)
 4. Build the dashboard UI
 5. Answer the questions in `SOLUTION_DESIGN.md`
-6. Ensure all 35 tests pass, typecheck is clean, and lint passes
+6. Ensure all 36 tests pass, typecheck is clean, and lint passes
 7. Add the following GitHub users as **collaborators** on your repo ([how to add collaborators](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-access-to-your-personal-repositories/inviting-collaborators-to-a-personal-repository)):
    - `naodya` (Naod — Engineering)
    - `juliusoh` (Julius — Engineering)
@@ -146,10 +146,10 @@ bun run db:reset && bun run db:seed
 
 | Category | Weight | What We Look For |
 | --- | --- | --- |
-| **Tests passing** | 40% | All 35 tests green. Correct HTTP status codes, validation, and edge cases. |
-| **Code quality** | 25% | Clean TypeScript, proper error handling, no shortcuts, good separation of concerns. |
-| **UI/UX** | 20% | Functional dashboard, good use of shadcn/ui, responsive design, dark mode support. |
-| **Solution design** | 15% | Thoughtful, practical answers to the architectural questions. |
+| **Tests passing** | 35% | All 36 tests green. Correct HTTP status codes, validation, and edge cases. |
+| **Code quality** | 30% | Clean TypeScript, proper error handling, no shortcuts, good separation of concerns. |
+| **Solution design** | 20% | Thoughtful, practical answers to the architectural questions. |
+| **UI/UX** | 15% | Functional dashboard, good use of shadcn/ui, responsive design, dark mode support. |
 
 ## Questions?
 

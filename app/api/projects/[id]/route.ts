@@ -58,8 +58,8 @@ export async function PATCH(_request: NextRequest, _context: RouteContext) {
  *
  * Business rules:
  *   - Return 404 if the project does not exist
- *   - Return 409 if the project has any non-completed tasks (status != "completed")
- *     with message: "Cannot delete project with active tasks"
+ *   - Return 409 if the project has any non-completed tasks (any status other
+ *     than "completed") with message: "Cannot delete project with non-completed tasks"
  *   - Projects with only completed tasks (or no tasks) can be deleted
  *
  * Drizzle hints:

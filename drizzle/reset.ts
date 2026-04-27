@@ -9,12 +9,16 @@ async function main() {
     throw new Error("DATABASE_URL environment variable is required");
   }
 
-  const client = postgres(connectionString, { max: 1 });
+  const client = postgres(connectionString, {
+    max: 1,
+    onnotice: () => {}, // silence NOTICE-level messages from CASCADE drops
+  });
   const db = drizzle(client);
 
-  console.log("Dropping public schema...");
-  await db.execute(sql`DROP SCHEMA public CASCADE`);
+  console.log("Dropping public and drizzle schemas...");
+  await db.execute(sql`DROP SCHEMA IF EXISTS public CASCADE`);
   await db.execute(sql`CREATE SCHEMA public`);
+  await db.execute(sql`DROP SCHEMA IF EXISTS drizzle CASCADE`);
 
   console.log("Running migrations...");
   await migrate(db, { migrationsFolder: "./drizzle" });
